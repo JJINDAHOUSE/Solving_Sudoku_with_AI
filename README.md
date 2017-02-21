@@ -3,13 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Assume the naked twins permit the values of v1 and v2. The values v1 and v2 are locked in for
-   those two boxes. As a result, no other box in theri same unit can contain the value v1 or v2. It reduces the possibilities for their peers. After the reduction, we might have another pairs of naked twins and we can repeatlly apply naked twins strategy to obtain smaller size of new sudoku and finally solve it.
+A: Apply constraint propagation to solve the naked twins problem allows us to effectively reduce the number of potential answers among their peers. In other words, we have a higher chance to obtain unique number among their peers. Assume the naked twins permit the values of v1 and v2. Thevalues v1 and v2 are locked in for those two boxes. As a result, no other box in theri same unit can contain the value v1 or v2. It reduces the possibilities for their peers. Therefore, repeatlly apply naked twins strategy can help us solve the sudoku faster.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: By adding diagonals as a part of the units, we only allow value 1 to 9 appears in the same
-   column, row, 3 by 3 square, and diagonal once. We first select a box with unique value and apply the elimination strategy to reduce the possibilities, which will result a more complete sudoku. Then, we apply naked twins strategy and agian it will lead to a more complete sudoku. And then only choice strategy. We repeatlly apply these strategies to the sudoku until we solve it or it cannot be solved. 
+A: Diagonal sudoku intorduces a new constraint that 1 to 9 can only appears once on each diagonal. This constraint limit the number of potential answers among each unit. Therefore, applying constraint propagation can effectively reduce the number of potential answers among each unit. In order words, it increase the possibility of unique number in each box and we can solve diagonal sudoku faster by using constraint propagation.
 
 ### Install
 
