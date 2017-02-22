@@ -3,7 +3,7 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Apply constraint propagation to solve the naked twins problem allows us to effectively reduce the number of potential answers among their peers. In other words, we have a higher chance to obtain unique number among their peers. Assume the naked twins permit the values of v1 and v2. Thevalues v1 and v2 are locked in for those two boxes. As a result, no other box in theri same unit can contain the value v1 or v2. It reduces the possibilities for their peers. Therefore, repeatlly apply naked twins strategy can help us solve the sudoku faster.
+A: Apply constraint propagation to solve the naked twins problem allows us to effectively reduce the number of potential answers among their peers. In other words, we have a higher chance to obtain unique number among their peers. Assume the naked twins permit the values of v1 and v2. Thevalues v1 and v2 are locked in for those two boxes. As a result, no other box in their same unit can contain the value v1 or v2. It reduces the possibilities for their peers. Therefore, repeatlly apply naked twins strategy can help us solve the sudoku faster.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
